@@ -23,7 +23,7 @@ try:
     if not user_input:
         raise ValueError("Text cannot be empty")
 
-    api_url = "https://app-api-imlp5-2ba6f34a7807.herokuapp.com/api/text=" + user_input
+    api_url = "http://127.0.0.1:5000/api/text=" + user_input
 
     response = requests.get(api_url)
 
